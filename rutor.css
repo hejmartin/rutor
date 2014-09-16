@@ -1,142 +1,149 @@
-[data-size] {
+[data-grid] {
 	float: left;
+	box-sizing: border-box;
+	padding: 0 10px;
 }
 
-[data-size] {background: rgba(0,0,0,0.1)}
-[data-size] + [data-size] {background: rgba(0,0,0,0.2)}
-[data-size] + [data-size] + [data-size] {background: rgba(0,0,0,0.3)}
+[data-grid~="desktop:hidden"] { display: none }
 
-[data-size~="desktop:1/1"] { width: 100% }
+[data-grid~="desktop:1/1"] { width: 100% }
 
-[data-size~="desktop:1/2"] { width: 50%  }
-[data-size~="desktop:2/2"] { width: 100% }
+[data-grid~="desktop:1/2"] { width: 50%  }
+[data-grid~="desktop:2/2"] { width: 100% }
 
-[data-size~="desktop:1/3"] { width: 33.333% }
-[data-size~="desktop:2/3"] { width: 66.666% }
-[data-size~="desktop:3/3"] { width: 100%    }
+[data-grid~="desktop:1/3"] { width: 33.333% }
+[data-grid~="desktop:2/3"] { width: 66.666% }
+[data-grid~="desktop:3/3"] { width: 100%    }
 
-[data-size~="desktop:1/4"] { width: 25%  }
-[data-size~="desktop:2/4"] { width: 50%  }
-[data-size~="desktop:3/4"] { width: 75%  }
-[data-size~="desktop:4/4"] { width: 100% }
+[data-grid~="desktop:1/4"] { width: 25%  }
+[data-grid~="desktop:2/4"] { width: 50%  }
+[data-grid~="desktop:3/4"] { width: 75%  }
+[data-grid~="desktop:4/4"] { width: 100% }
 
-[data-size~="desktop:1/5"] { width: 20%  }
-[data-size~="desktop:2/5"] { width: 40%  }
-[data-size~="desktop:3/5"] { width: 60%  }
-[data-size~="desktop:4/5"] { width: 80%  }
-[data-size~="desktop:5/5"] { width: 100% }
+[data-grid~="desktop:1/5"] { width: 20%  }
+[data-grid~="desktop:2/5"] { width: 40%  }
+[data-grid~="desktop:3/5"] { width: 60%  }
+[data-grid~="desktop:4/5"] { width: 80%  }
+[data-grid~="desktop:5/5"] { width: 100% }
 
-[data-size~="desktop:1/6"] { width: 16.667% }
-[data-size~="desktop:2/6"] { width: 33.333% }
-[data-size~="desktop:3/6"] { width: 50%     }
-[data-size~="desktop:4/6"] { width: 66.666% }
-[data-size~="desktop:4/6"] { width: 83.333% }
-[data-size~="desktop:6/6"] { width: 100%    }
+[data-grid~="desktop:1/6"] { width: 16.667% }
+[data-grid~="desktop:2/6"] { width: 33.333% }
+[data-grid~="desktop:3/6"] { width: 50%     }
+[data-grid~="desktop:4/6"] { width: 66.666% }
+[data-grid~="desktop:4/6"] { width: 83.333% }
+[data-grid~="desktop:6/6"] { width: 100%    }
 
-[data-size~="desktop:1/7"] { width: 14.2857% }
-[data-size~="desktop:2/7"] { width: 28.5714% }
-[data-size~="desktop:3/7"] { width: 42.8571% }
-[data-size~="desktop:4/7"] { width: 57.1428% }
-[data-size~="desktop:5/7"] { width: 71.4285% }
-[data-size~="desktop:6/7"] { width: 85.7142% }
-[data-size~="desktop:7/7"] { width: 100%    }
+[data-grid~="desktop:1/7"] { width: 14.2857% }
+[data-grid~="desktop:2/7"] { width: 28.5714% }
+[data-grid~="desktop:3/7"] { width: 42.8571% }
+[data-grid~="desktop:4/7"] { width: 57.1428% }
+[data-grid~="desktop:5/7"] { width: 71.4285% }
+[data-grid~="desktop:6/7"] { width: 85.7142% }
+[data-grid~="desktop:7/7"] { width: 100%    }
 
-[data-size~="desktop:1/8"] { width: 12.5% }
-[data-size~="desktop:2/8"] { width: 25%   }
-[data-size~="desktop:3/8"] { width: 37.5% }
-[data-size~="desktop:4/8"] { width: 50%   }
-[data-size~="desktop:5/8"] { width: 62.5% }
-[data-size~="desktop:6/8"] { width: 75%   }
-[data-size~="desktop:7/8"] { width: 87.5% }
-[data-size~="desktop:8/8"] { width: 100%  }
+[data-grid~="desktop:1/8"] { width: 12.5% }
+[data-grid~="desktop:2/8"] { width: 25%   }
+[data-grid~="desktop:3/8"] { width: 37.5% }
+[data-grid~="desktop:4/8"] { width: 50%   }
+[data-grid~="desktop:5/8"] { width: 62.5% }
+[data-grid~="desktop:6/8"] { width: 75%   }
+[data-grid~="desktop:7/8"] { width: 87.5% }
+[data-grid~="desktop:8/8"] { width: 100%  }
 
 @media screen and (max-width:1024px) {
-	[data-size~="tablet:1/1"] { width: 100% }
+	[data-grid~="desktop:hidden"] { display: block }
+	[data-grid~="tablet:hidden"] { display: none }
 
-	[data-size~="tablet:1/2"] { width: 50%  }
-	[data-size~="tablet:2/2"] { width: 100% }
+	[data-grid~="tablet:1/1"] { width: 100% }
 
-	[data-size~="tablet:1/3"] { width: 33.333% }
-	[data-size~="tablet:2/3"] { width: 66.666% }
-	[data-size~="tablet:3/3"] { width: 100%    }
+	[data-grid~="tablet:1/2"] { width: 50%  }
+	[data-grid~="tablet:2/2"] { width: 100% }
 
-	[data-size~="tablet:1/4"] { width: 25%  }
-	[data-size~="tablet:2/4"] { width: 50%  }
-	[data-size~="tablet:3/4"] { width: 75%  }
-	[data-size~="tablet:4/4"] { width: 100% }
+	[data-grid~="tablet:1/3"] { width: 33.333% }
+	[data-grid~="tablet:2/3"] { width: 66.666% }
+	[data-grid~="tablet:3/3"] { width: 100%    }
 
-	[data-size~="tablet:1/5"] { width: 20%  }
-	[data-size~="tablet:2/5"] { width: 40%  }
-	[data-size~="tablet:3/5"] { width: 60%  }
-	[data-size~="tablet:4/5"] { width: 80%  }
-	[data-size~="tablet:5/5"] { width: 100% }
+	[data-grid~="tablet:1/4"] { width: 25%  }
+	[data-grid~="tablet:2/4"] { width: 50%  }
+	[data-grid~="tablet:3/4"] { width: 75%  }
+	[data-grid~="tablet:4/4"] { width: 100% }
 
-	[data-size~="tablet:1/6"] { width: 16.667% }
-	[data-size~="tablet:2/6"] { width: 33.333% }
-	[data-size~="tablet:3/6"] { width: 50%     }
-	[data-size~="tablet:4/6"] { width: 66.666% }
-	[data-size~="tablet:4/6"] { width: 83.333% }
-	[data-size~="tablet:6/6"] { width: 100%    }
+	[data-grid~="tablet:1/5"] { width: 20%  }
+	[data-grid~="tablet:2/5"] { width: 40%  }
+	[data-grid~="tablet:3/5"] { width: 60%  }
+	[data-grid~="tablet:4/5"] { width: 80%  }
+	[data-grid~="tablet:5/5"] { width: 100% }
 
-	[data-size~="tablet:1/7"] { width: 14.2857% }
-	[data-size~="tablet:2/7"] { width: 28.5714% }
-	[data-size~="tablet:3/7"] { width: 42.8571% }
-	[data-size~="tablet:4/7"] { width: 57.1428% }
-	[data-size~="tablet:5/7"] { width: 71.4285% }
-	[data-size~="tablet:6/7"] { width: 85.7142% }
-	[data-size~="tablet:7/7"] { width: 100%    }
+	[data-grid~="tablet:1/6"] { width: 16.667% }
+	[data-grid~="tablet:2/6"] { width: 33.333% }
+	[data-grid~="tablet:3/6"] { width: 50%     }
+	[data-grid~="tablet:4/6"] { width: 66.666% }
+	[data-grid~="tablet:4/6"] { width: 83.333% }
+	[data-grid~="tablet:6/6"] { width: 100%    }
 
-	[data-size~="tablet:1/8"] { width: 12.5% }
-	[data-size~="tablet:2/8"] { width: 25%   }
-	[data-size~="tablet:3/8"] { width: 37.5% }
-	[data-size~="tablet:4/8"] { width: 50%   }
-	[data-size~="tablet:5/8"] { width: 62.5% }
-	[data-size~="tablet:6/8"] { width: 75%   }
-	[data-size~="tablet:7/8"] { width: 87.5% }
-	[data-size~="tablet:8/8"] { width: 100%  }}
+	[data-grid~="tablet:1/7"] { width: 14.2857% }
+	[data-grid~="tablet:2/7"] { width: 28.5714% }
+	[data-grid~="tablet:3/7"] { width: 42.8571% }
+	[data-grid~="tablet:4/7"] { width: 57.1428% }
+	[data-grid~="tablet:5/7"] { width: 71.4285% }
+	[data-grid~="tablet:6/7"] { width: 85.7142% }
+	[data-grid~="tablet:7/7"] { width: 100%    }
+
+	[data-grid~="tablet:1/8"] { width: 12.5% }
+	[data-grid~="tablet:2/8"] { width: 25%   }
+	[data-grid~="tablet:3/8"] { width: 37.5% }
+	[data-grid~="tablet:4/8"] { width: 50%   }
+	[data-grid~="tablet:5/8"] { width: 62.5% }
+	[data-grid~="tablet:6/8"] { width: 75%   }
+	[data-grid~="tablet:7/8"] { width: 87.5% }
+	[data-grid~="tablet:8/8"] { width: 100%  }}
 
 @media screen and (max-width:700px) {
-	[data-size~="mobile:1/1"] { width: 100% }
+	[data-grid~="desktop:hidden"] { display: block }
+	[data-grid~="tablet:hidden"] { display: block }
+	[data-grid~="mobile:hidden"] { display: none }
 
-	[data-size~="mobile:1/2"] { width: 50%  }
-	[data-size~="mobile:2/2"] { width: 100% }
+	[data-grid~="mobile:1/1"] { width: 100% }
 
-	[data-size~="mobile:1/3"] { width: 33.333% }
-	[data-size~="mobile:2/3"] { width: 66.666% }
-	[data-size~="mobile:3/3"] { width: 100%    }
+	[data-grid~="mobile:1/2"] { width: 50%  }
+	[data-grid~="mobile:2/2"] { width: 100% }
 
-	[data-size~="mobile:1/4"] { width: 25%  }
-	[data-size~="mobile:2/4"] { width: 50%  }
-	[data-size~="mobile:3/4"] { width: 75%  }
-	[data-size~="mobile:4/4"] { width: 100% }
+	[data-grid~="mobile:1/3"] { width: 33.333% }
+	[data-grid~="mobile:2/3"] { width: 66.666% }
+	[data-grid~="mobile:3/3"] { width: 100%    }
 
-	[data-size~="mobile:1/5"] { width: 20%  }
-	[data-size~="mobile:2/5"] { width: 40%  }
-	[data-size~="mobile:3/5"] { width: 60%  }
-	[data-size~="mobile:4/5"] { width: 80%  }
-	[data-size~="mobile:5/5"] { width: 100% }
+	[data-grid~="mobile:1/4"] { width: 25%  }
+	[data-grid~="mobile:2/4"] { width: 50%  }
+	[data-grid~="mobile:3/4"] { width: 75%  }
+	[data-grid~="mobile:4/4"] { width: 100% }
 
-	[data-size~="mobile:1/6"] { width: 16.667% }
-	[data-size~="mobile:2/6"] { width: 33.333% }
-	[data-size~="mobile:3/6"] { width: 50%     }
-	[data-size~="mobile:4/6"] { width: 66.666% }
-	[data-size~="mobile:4/6"] { width: 83.333% }
-	[data-size~="mobile:6/6"] { width: 100%    }
+	[data-grid~="mobile:1/5"] { width: 20%  }
+	[data-grid~="mobile:2/5"] { width: 40%  }
+	[data-grid~="mobile:3/5"] { width: 60%  }
+	[data-grid~="mobile:4/5"] { width: 80%  }
+	[data-grid~="mobile:5/5"] { width: 100% }
 
-	[data-size~="mobile:1/7"] { width: 14.2857% }
-	[data-size~="mobile:2/7"] { width: 28.5714% }
-	[data-size~="mobile:3/7"] { width: 42.8571% }
-	[data-size~="mobile:4/7"] { width: 57.1428% }
-	[data-size~="mobile:5/7"] { width: 71.4285% }
-	[data-size~="mobile:6/7"] { width: 85.7142% }
-	[data-size~="mobile:7/7"] { width: 100%    }
+	[data-grid~="mobile:1/6"] { width: 16.667% }
+	[data-grid~="mobile:2/6"] { width: 33.333% }
+	[data-grid~="mobile:3/6"] { width: 50%     }
+	[data-grid~="mobile:4/6"] { width: 66.666% }
+	[data-grid~="mobile:4/6"] { width: 83.333% }
+	[data-grid~="mobile:6/6"] { width: 100%    }
 
-	[data-size~="mobile:1/8"] { width: 12.5% }
-	[data-size~="mobile:2/8"] { width: 25%   }
-	[data-size~="mobile:3/8"] { width: 37.5% }
-	[data-size~="mobile:4/8"] { width: 50%   }
-	[data-size~="mobile:5/8"] { width: 62.5% }
-	[data-size~="mobile:6/8"] { width: 75%   }
-	[data-size~="mobile:7/8"] { width: 87.5% }
-	[data-size~="mobile:8/8"] { width: 100%  }
+	[data-grid~="mobile:1/7"] { width: 14.2857% }
+	[data-grid~="mobile:2/7"] { width: 28.5714% }
+	[data-grid~="mobile:3/7"] { width: 42.8571% }
+	[data-grid~="mobile:4/7"] { width: 57.1428% }
+	[data-grid~="mobile:5/7"] { width: 71.4285% }
+	[data-grid~="mobile:6/7"] { width: 85.7142% }
+	[data-grid~="mobile:7/7"] { width: 100%    }
+
+	[data-grid~="mobile:1/8"] { width: 12.5% }
+	[data-grid~="mobile:2/8"] { width: 25%   }
+	[data-grid~="mobile:3/8"] { width: 37.5% }
+	[data-grid~="mobile:4/8"] { width: 50%   }
+	[data-grid~="mobile:5/8"] { width: 62.5% }
+	[data-grid~="mobile:6/8"] { width: 75%   }
+	[data-grid~="mobile:7/8"] { width: 87.5% }
+	[data-grid~="mobile:8/8"] { width: 100%  }
 }
